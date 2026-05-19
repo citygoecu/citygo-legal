@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eliminar Cuenta - CityGo</title>
+    <style>
+        body { font-family: sans-serif; background-color: #F3F4F6; display: flex; justify-content: center; align-items: center; height: 100vh; margin: 0; }
+        .card { background: white; padding: 30px; border-radius: 20px; shadow: 0 4px 6px rgba(0,0,0,0.1); max-width: 400px; width: 90%; box-shadow: 0 10px 15px -3px rgba(0,0,0,0.1); }
+        h1 { color: #1D4ED8; font-size: 22px; text-align: center; }
+        p { color: #6B7280; font-size: 14px; text-align: center; margin-bottom: 25px; }
+        label { display: block; font-size: 14px; font-weight: bold; margin-bottom: 5px; color: #374151; }
+        input { width: 100%; padding: 12px; margin-bottom: 20px; border: 1px solid #D1D5DB; border-radius: 10px; box-sizing: border-box; }
+        button { width: 100%; padding: 12px; background-color: #EF4444; color: white; border: none; border-radius: 10px; font-weight: bold; cursor: pointer; font-size: 16px; }
+        button:hover { background-color: #DC2626; }
+    </style>
+</head>
+<body>
+    <div class="card">
+        <h1>Eliminar mi cuenta de CityGo</h1>
+        <p>Lamentamos que te vayas. Al enviar este formulario, procesaremos la eliminación de tus datos en un plazo de 24-48 horas.</p>
+        
+        <form action="https://formspree.io/f/mgoqvzwy" method="POST">
+            <label>Correo electrónico de la cuenta:</label>
+            <input type="email" name="email" placeholder="ejemplo@correo.com" required>
+            
+            <label>Número de teléfono:</label>
+            <input type="tel" name="phone" placeholder="0987654321" required>
+
+            <label>Motivo (opcional):</label>
+            <input type="text" name="reason" placeholder="Opcional">
+
+            <button type="submit">Solicitar eliminación</button>
+        </form>
+    </div>
+</body>
+</html>
